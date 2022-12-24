@@ -1,0 +1,336 @@
+/*___________________________ GENERAl ___________________________ */
+section {
+    padding: 100px 0;
+}
+
+section .title {
+    font-family: 'Luckiest Guy', sans-serif;
+    color: var(--dark-text);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .title::before {
+    content: "";
+    background: var(--dark-text);
+    position: absolute;
+    bottom: 0;
+    width: 160px;
+    height: 3px;
+}
+
+section .title::after {
+    color: var(--main-color);
+    background: #fff;
+    font-size: 18px;
+    position: absolute;
+    bottom: -13px;
+    padding: 5px;
+}
+
+
+/*___________________________ SECTION ABOUT  ___________________________*/
+.about .title::after {
+    content: "Quem sou eu";
+}
+
+.about .content-about {
+    display: flex;
+    align-items: center;
+}
+
+.about .content-about .left-container {
+    margin-right: 50px;
+    /* width: 45%; */
+}
+
+.about .content-about .left-container img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* .about .content-about .right-container {
+    width: 55%;
+} */
+
+.about .content-about .right-container .my-text {
+    color: var(--dark-text);
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.about .content-about .right-container .my-text span {
+    color: var(--main-color);
+}
+
+.about .content-about .right-container .text-about p {
+    color: var(--dark-text);
+    text-align: justify;
+    font-size: 16px;
+}
+
+.about .content-about .right-container .download-cv {
+    margin-top: 25px;
+}
+
+.about .content-about .right-container .download-cv a {
+    background-color: transparent;
+    color: var(--main-color);
+    border: .13rem solid var(--main-color);
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: .4rem 3rem;
+    transition: 0.5s;
+}
+
+.about .content-about .right-container .download-cv a:hover {
+    color: var(--dark-text);
+    background-color: var(--main-color);
+    opacity: 0.7;
+}
+
+/*___________________________ PROJECTS SECTION  ___________________________*/
+.projects .title::after {
+    content: "Meus projetos";
+}
+
+.projects .card-container {
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects .card-container .card {
+    border: .13rem solid #cccccc;
+    border-radius: 5px;
+    width: 350px;
+    min-height: 400px;
+    margin: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.projects .card-container .card::before {
+    content: "";
+    border: 20px solid transparent;
+    border-top: 20px solid var(--main-color);
+    border-right: 20px solid var(--main-color);
+    border-top-right-radius: 3px;
+    position: absolute;
+    top: -0.2px;
+    right: -0.2px;
+}
+
+.projects .card-container .card .card-box {
+    margin: 15px 15px 30px 15px;
+}
+
+.projects .card-container .card .card-box img {
+    border: .13rem solid #cccccc;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.projects .card-container .card .card-box h2 {
+    color: var(--dark-text);
+    font-size: 24px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+}
+
+.projects .card-container .card .card-box p {
+    color: var(--dark-subtitle);
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+}
+
+.projects .card-container .card .card-box a {
+    background: var(--main-color);
+    color: var(--light-text);
+    border: .13rem solid var(--main-color);
+    border-radius: 5px;
+
+    padding: .4rem 1rem;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projects .card-container .card .card-box a:hover {
+    background: transparent;
+    color: var(--main-color);
+}
+
+
+/*___________________________ SKILLS SECTION  ___________________________*/
+.skills .title::after {
+    content: "Especialidades";
+}
+
+
+/*___________________________ CONTACT SECTION ___________________________*/
+.contact .title::after {
+    content: "Fale comigo";
+}
+
+.contact .contact-content {
+    display: flex;
+}
+
+.contact .contact-content .left-container {
+    max-width: 50%;
+}
+
+.contact .contact-content .right-container {
+    min-width: 50%;
+}
+
+
+/* contact cards */
+.contact .contact-content .left-container .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .contact-content .left-container .contact-info .contact-container {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 180px;
+    height: 230px;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact .contact-content .left-container .contact-info .contact-container i {
+    color: var(--main-color);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-content .left-container .contact-info .contact-container h3 {
+    color: var(--dark-text);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact .contact-content .left-container .contact-info .contact-container p {
+    color: var(--dark-subtitle);
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.contact .contact-content .left-container .contact-info .contact-container .email {
+    text-decoration: underline;
+}
+
+/* social media */
+.contact .contact-content .left-container .social-media {
+    margin-top: 20px;
+}
+
+.contact .contact-content .left-container .social-media h3 {
+    color: var(--dark-text);
+    font-size: 22px;
+}
+
+.contact .contact-content .left-container .social-media .links a {
+    display: inline-flex;
+    margin: 20px 0 0 20px;
+}
+
+.contact .contact-content .left-container .social-media .links a:first-child {
+    margin-left: 0;
+}
+
+.contact .contact-content .left-container .social-media .links a i {
+    color: var(--main-color);
+    font-size: 40px;
+    transition: all 5s ease;
+}
+
+.contact .contact-content .left-container .social-media .links a i:hover {
+    color: #FFA500;
+}
+
+
+/* Contact Form */
+.contact .contact-content .right-container .form-container h1 {
+    color: var(--dark-text);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.contact .contact-content .right-container .form-container form .field {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.contact .contact-content .right-container .form-container form .field input,
+.contact .contact-content .right-container .form-container form .field textarea {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.contact .contact-content .right-container .form-container form .message {
+    height: 150px;
+}
+
+.contact .contact-content .right-container .form-container form .message textarea {
+    padding-top: 15px;
+    resize: none;
+}
+
+.contact .contact-content .right-container .form-container form .button button {
+    background: var(--main-color);
+    color: var(--dark-text);
+    border: .13rem solid var(--main-color);
+    border-radius: 5px;
+
+    padding: .7rem 3rem;
+    margin-top: 10px;
+
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-content .right-container .form-container form .button button:hover {
+    background: transparent;
+    color: var(--main-color);
+}
